@@ -13,6 +13,7 @@ function responder(){
     if(resposta==efruta){
         efruta= frutas[Math.floor(Math.random() * 12)]
 
+        document.getElementById('resposta').value = ''
         //acertos
         pontos++;
         document.getElementById("pontos").innerHTML=pontos;
@@ -53,7 +54,7 @@ function responder(){
             case 4:
                 const Imagem5 = document.getElementById("vida5");
                 Imagem5.src = "dead.png";
-                el.style.animation='bounce 2s';
+                el.style.animation='bounce 1.5s';
                 setTimeout(function() {
                     el.style.animation = "";
                 }, 2000);
