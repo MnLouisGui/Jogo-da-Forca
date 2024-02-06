@@ -1,7 +1,7 @@
 var vida=5;
 var pontos=0;
 var frutas=["maçã", "melancia", "maracuja", "acerola", "abacaxi", "açaí", "banana", "bacuri", "bergamota", "cereja", "caja","cupuaçu","pera","uva",];
-var efruta= frutas[Math.floor(Math.random() * 12)];
+var efruta= frutas[Math.floor(Math.random() * 14)];
 var letra = efruta.substring(0,1);
 document.getElementById("letra").innerHTML="Tema: Fruta com a letra "+letra.toUpperCase();
 
@@ -14,7 +14,7 @@ function responder(){
     let el=document.getElementById("vida");
     var resposta = document.getElementById("resposta").value;
     if(resposta==efruta){
-        efruta= frutas[Math.floor(Math.random() * 12)]
+        efruta= frutas[Math.floor(Math.random() * 14)]
 
         document.getElementById('resposta').value = ''
         //acertos
