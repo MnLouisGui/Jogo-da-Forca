@@ -22,6 +22,8 @@ function responder(){
         document.getElementById("pontos").innerHTML=pontos;
         var letra = efruta.substring(0,1);
         document.getElementById("letra").innerHTML="Tema: Fruta com a letra "+letra.toUpperCase();
+        var caractered=efruta.length;
+        document.getElementById("contador").innerHTML='Tem '+caractered+" Letras";
     }else{
         vida--;
         console.log(vida)
