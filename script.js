@@ -5,6 +5,9 @@ var efruta= frutas[Math.floor(Math.random() * 12)];
 var letra = efruta.substring(0,1);
 document.getElementById("letra").innerHTML="Tema: Fruta com a letra "+letra.toUpperCase();
 
+var caractered=efruta.length;
+document.getElementById("contador").innerHTML='Tem '+caractered+" Letras";
+
 console.log(efruta);
 
 function responder(){
