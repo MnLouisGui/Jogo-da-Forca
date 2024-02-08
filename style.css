@@ -82,14 +82,14 @@ p{
     margin: 10px;
 }
 
-.button{
+.button, .button2{
     margin: 10px;
     font-size: 24px;
     padding: 10px;
     border-radius: 10px;
 }
 
-.button:hover{
+.button:hover, .button2:hover{
     opacity: 0.8;
     scale: 1.1;
     
